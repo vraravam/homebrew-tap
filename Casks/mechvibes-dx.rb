@@ -1,6 +1,6 @@
 cask "mechvibes-dx" do
-  version "0.9.1"
-  sha256 "79ecfdeba4cbfb2a7ca56f560b8917862421a25c77d8385724b295c4c3281f06"
+  version "0.9.3"
+  sha256 "10be75841081eb4ae2be5d6661e115377c7c3b7d4437a435d9aabdcd2ce6a7e3"
 
   url "https://github.com/vraravam/mechvibes-dx/releases/download/v#{version}/mechvibes-dx-#{version}-macos-arm64.dmg"
   name "MechvibesDX"
