@@ -17,6 +17,9 @@ brew install vraravam/tap/git-remote-gpg-encrypt
 
 # mechvibes-dx (cask, Apple Silicon)
 brew install --cask vraravam/tap/mechvibes-dx
+
+# wobbly (cask, Apple Silicon and Intel)
+brew install --cask vraravam/tap/wobbly
 ```
 
 To install by short name instead, trust the whole tap first: `brew tap vraravam/tap && brew trust vraravam/tap`.
@@ -26,3 +29,5 @@ To install by short name instead, trust the whole tap first: `brew tap vraravam/
 [git-remote-gpg-encrypt](https://github.com/vraravam/git-remote-gpg-encrypt) [![GitHub tag](https://img.shields.io/github/v/tag/vraravam/git-remote-gpg-encrypt)](https://github.com/vraravam/git-remote-gpg-encrypt/tags)
 
 [mechvibes-dx](https://github.com/hainguyents13/mechvibes-dx) (cask, Apple Silicon) [![GitHub release](https://img.shields.io/github/v/release/hainguyents13/mechvibes-dx)](https://github.com/hainguyents13/mechvibes-dx/releases)
+
+[wobbly](https://github.com/jsgrrchg/Wobbly) (cask, universal) [![GitHub release](https://img.shields.io/github/v/release/jsgrrchg/Wobbly)](https://github.com/jsgrrchg/Wobbly/releases)
