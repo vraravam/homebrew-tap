@@ -1,11 +1,11 @@
 cask "mechvibes-dx" do
-  version "0.9.3"
-  sha256 "10be75841081eb4ae2be5d6661e115377c7c3b7d4437a435d9aabdcd2ce6a7e3"
+  version "0.8.3"
+  sha256 "71692733371530fb78fc9e7afb54680a1d44e62ba8338580edba384c7b13e841"
 
-  url "https://github.com/vraravam/mechvibes-dx/releases/download/v#{version}/mechvibes-dx-#{version}-macos-arm64.dmg"
+  url "https://github.com/hainguyents13/mechvibes-dx/releases/download/v#{version}/mechvibes-dx-#{version}-macos-arm64.dmg"
   name "MechvibesDX"
   desc "Mechanical keyboard and mouse sound simulator"
-  homepage "https://github.com/vraravam/mechvibes-dx"
+  homepage "https://github.com/hainguyents13/mechvibes-dx"
 
   livecheck do
     url :url
