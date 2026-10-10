@@ -2,8 +2,8 @@ class GitRemoteGpgEncrypt < Formula
   desc "Transparent, passphrase-only, encrypted git backups via a git remote helper"
   homepage "https://vraravam.github.io/git-remote-gpg-encrypt/"
   url "https://github.com/vraravam/git-remote-gpg-encrypt.git",
-      tag:      "v0.2.1",
-      revision: "efd1ea51d5b45e1d7d7dc797bfbbd228d4beced2"
+      tag:      "v0.2.2",
+      revision: "bd98fe56d0349ae4201bb183b9d6138f43c89d74"
   license "MIT"
 
   # git is the other hard runtime dependency (this tool IS a git remote helper,
