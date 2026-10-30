@@ -1,11 +1,12 @@
-cask "mechvibes-dx" do
-  version "0.8.4"
-  sha256 "bbaad9ff2de01c18b50562b4ce9085db456eb066402276c21f12180ff1342ee4"
+cask "mechvibes" do
+  version "3.0.0"
+  arch arm: "arm64"
+  sha256 arm: "6638cb617a4dc800dbac0638fc0a00fb9a4d997ef4ad8a82487843f385a98629"
 
-  url "https://github.com/hainguyents13/mechvibes-dx/releases/download/v#{version}/mechvibes-dx-#{version}-macos-arm64.dmg"
-  name "MechvibesDX"
+  url "https://github.com/hainguyents13/mechvibes/releases/download/v#{version}/mechvibes-#{version}-macos-#{arch}.dmg"
+  name "Mechvibes"
   desc "Mechanical keyboard and mouse sound simulator"
-  homepage "https://github.com/hainguyents13/mechvibes-dx"
+  homepage "https://github.com/hainguyents13/mechvibes"
 
   livecheck do
     url :url
@@ -16,7 +17,7 @@ cask "mechvibes-dx" do
   depends_on arch: :arm64
   depends_on :macos
 
-  app "MechvibesDX.app"
+  app "Mechvibes.app"
 
   # The app is ad-hoc signed but not notarized, so Gatekeeper refuses to open the
   # quarantined copy Homebrew downloads (a plain double-click is blocked and the
@@ -24,13 +25,13 @@ cask "mechvibes-dx" do
   # that right-click does, once. Only this one app bundle is touched, and the
   # command succeeds whether or not the flag is present.
   postflight_steps do
-    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/MechvibesDX.app"]
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Mechvibes.app"]
   end
 
   zap trash: "~/Library/Application Support/Mechvibes"
 
   caveats <<~EOS
-    MechvibesDX needs two macOS permissions to hear your keystrokes. Enable it under
+    Mechvibes needs two macOS permissions to hear your keystrokes. Enable it under
     System Settings > Privacy & Security, in both:
       - Accessibility (while its window is focused)
       - Input Monitoring (while it is minimized or another app is in front)
@@ -38,7 +39,7 @@ cask "mechvibes-dx" do
     The app is ad-hoc signed, so after an upgrade macOS can keep showing those
     permissions as on while they have stopped working. If the keys go silent, reset
     them and grant them again:
-      tccutil reset Accessibility com.hainguyents13.mechvibesdx
-      tccutil reset ListenEvent com.hainguyents13.mechvibesdx
+      tccutil reset Accessibility com.hainguyents13.mechvibes
+      tccutil reset ListenEvent com.hainguyents13.mechvibes
   EOS
 end
