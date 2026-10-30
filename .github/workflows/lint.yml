@@ -38,6 +38,9 @@ jobs:
           mkdir -p "$(dirname "${tap_dir}")"
           ln -s "${GITHUB_WORKSPACE}" "${tap_dir}"
 
+      - name: brew trust
+        run: brew trust vraravam/tap
+
       - name: brew style
         run: brew style vraravam/tap
 
