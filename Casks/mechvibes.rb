@@ -1,7 +1,8 @@
 cask "mechvibes" do
-  version "3.0.0"
   arch arm: "arm64"
-  sha256 arm: "6638cb617a4dc800dbac0638fc0a00fb9a4d997ef4ad8a82487843f385a98629"
+
+  version "3.0.1"
+  sha256 arm: "23aabc54e63b3efdfba868cc97b74b657bd5a718c4744e6485c8f827ba282233"
 
   url "https://github.com/hainguyents13/mechvibes/releases/download/v#{version}/mechvibes-#{version}-macos-#{arch}.dmg"
   name "Mechvibes"
