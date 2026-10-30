@@ -1,13 +1,13 @@
 cask "mechvibes" do
   arch arm: "arm64"
 
-  version "3.0.1"
-  sha256 arm: "23aabc54e63b3efdfba868cc97b74b657bd5a718c4744e6485c8f827ba282233"
+  version "3.1.0"
+  sha256 arm: "9de27961768ae55cd717a05b89293f4e86a10b319b7db4e315ceefbcf682d1aa"
 
   url "https://github.com/hainguyents13/mechvibes/releases/download/v#{version}/mechvibes-#{version}-macos-#{arch}.dmg"
   name "Mechvibes"
-  desc "Mechanical keyboard and mouse sound simulator"
-  homepage "https://github.com/hainguyents13/mechvibes"
+  desc "Play mechanical keyboard sounds as you type"
+  homepage "https://mechvibes.com/"
 
   livecheck do
     url :url
