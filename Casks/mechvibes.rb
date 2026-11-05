@@ -1,8 +1,10 @@
 cask "mechvibes" do
-  arch arm: "arm64"
+  arch arm:   "arm64",
+       intel: "x86_64"
 
-  version "3.4.0"
-  sha256 arm: "f4ac82a1d8be10d212fc71dcbe5487184f01a9c141d424d86fdfe0359c47edde"
+  version "3.5.0"
+  sha256  arm:   "6cf89343bd9367a692ae4244d553980422e4c6676ebfd174e8024683a597c031",
+          intel: "4c7a7328352143f8565d2ba1bc09b185346264d4b565b8dfe75bdae13be35255"
 
   url "https://github.com/hainguyents13/mechvibes/releases/download/v#{version}/mechvibes-#{version}-macos-#{arch}.dmg"
   name "Mechvibes"
@@ -14,8 +16,6 @@ cask "mechvibes" do
     strategy :github_latest
   end
 
-  # The release ships an Apple Silicon build only (see the DMG's name).
-  depends_on arch: :arm64
   depends_on :macos
 
   app "Mechvibes.app"
