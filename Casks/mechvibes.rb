@@ -2,9 +2,9 @@ cask "mechvibes" do
   arch arm:   "arm64",
        intel: "x86_64"
 
-  version "3.5.2"
-  sha256  arm:   "1b1a88cf978cc2915fbb06abd52eca253832f9ec402991ccf8bd995530c680d1",
-          intel: "3e861750398fb71975a41b95b5829f510bb4b0fa2f41718df97979340d56a7af"
+  version "3.5.3"
+  sha256  arm:   "52cd89c255f0fcefa5ecd107ddfdd5349dd21e8cc951da654656c8b9172a82aa",
+          intel: "5f367e1002e0b968c0e84fdff0aa189f69cb1fd23b4b89d96a727c2de029aa32"
 
   url "https://github.com/hainguyents13/mechvibes/releases/download/v#{version}/mechvibes-#{version}-macos-#{arch}.dmg"
   name "Mechvibes"
